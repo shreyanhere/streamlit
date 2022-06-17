@@ -10,7 +10,7 @@
 - Run following command.
 
   ```
-  pip install -r requirements.yaml 
+  pip install -r requirements.txt
   ```
 - Create 'Model' folder, download my trained model from [here](https://drive.google.com/file/d/1iue70Y-LVLXcOIGAn6_Ao2VvP2tNTUXF/view?usp=sharing) and put in folder.
 - `app.py` is the main Python file of Streamlit Web-Application. 
