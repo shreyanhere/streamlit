@@ -22,7 +22,7 @@ st.set_page_config(
 st.markdown("<h1 style='text-align: center; color:  LightGray ;'> 💉 Xray Classification </h1>", unsafe_allow_html=True)
 st.subheader("Upload an image and check for Pneumonia")
 st.sidebar.subheader("Model Name")
-models_list = ["XCEPTION"]
+models_list = ["VGG19"]
 network = st.sidebar.selectbox("Selected  Model", models_list)
 model = tf.keras.models.load_model("saved_model/vgg_50.h5")
 
@@ -70,4 +70,4 @@ if uploaded_file is not None:
         plt.title('Prediction Probability', family='serif', fontsize=15, style='italic', weight='bold', color='black', loc='center', rotation=0)
         plt.xlabel('Probability', fontsize=12, weight='bold', color='black')
         plt.ylabel('Category', fontsize=12, weight='bold', color='black')
-        st.pyplot(fig)import cv2
+        st.pyplot(fig)
