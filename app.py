@@ -22,7 +22,7 @@ st.set_page_config(
 st.markdown("<h1 style='text-align: center; color:  LightGray ;'> 💉 Xray Classification </h1>", unsafe_allow_html=True)
 st.subheader("Upload an image and check for Pneumonia")
 st.sidebar.subheader("Model Name")
-models_list = ["VGG19"]
+models_list = ["XCEPTION"]
 network = st.sidebar.selectbox("Selected  Model", models_list)
 model = tf.keras.models.load_model("saved_model/vgg_50.h5")
 
