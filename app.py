@@ -70,4 +70,4 @@ if uploaded_file is not None:
         plt.title('Prediction Probability', family='serif', fontsize=15, style='italic', weight='bold', color='black', loc='center', rotation=0)
         plt.xlabel('Probability', fontsize=12, weight='bold', color='black')
         plt.ylabel('Category', fontsize=12, weight='bold', color='black')
-        st.pyplot(fig)
+        st.pyplot(fig)import cv2
